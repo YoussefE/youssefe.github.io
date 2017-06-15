@@ -1,0 +1,42 @@
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url(../images/Himalayas.gif);
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;	
+	margin: 0px;
+}
+
+div{
+    position: relative;
+}
+
+.header-parallax{
+	background-image: url(../images/Himalayas.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Name{
+    color: #E0E0E2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vw;
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 200px) {
+    #Name{
+        font-size: 15vw;
+        word-spacing: 9999999px;
+    }
+}
