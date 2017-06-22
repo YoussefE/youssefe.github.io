@@ -1,49 +1,120 @@
-body{
-	font-family: 'Montserrat', sans-serif;	
-	margin: 0px;
+body{	
+	margin: 0;
+    color: #DCDCDC;
+    background-color: #DCDCDC;
+    font-family: 'Rubik', sans-serif;
 }
 
-div{
-    position: relative;
+#loading{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #DCDCDC;
+    z-index:9999;
 }
 
-.header{
-    height: 100vh;
+
+.section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    -webkit-box-shadow:0px 1px 1px #4B4B4B;
+    -moz-box-shadow:0px 1px 1px #4B4B4B;
+    box-shadow:0px 1px 1px #4B4B4B; 
+    padding: 5vh;
 }
 
-.header-parallax{
-	background-image: url(../images/Himalayas.gif);
+.section-parallax{
+    height: 100vh;
+	background-image: url(../assets/Himalayas.gif);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-#Title{
-    color: #E0E0E2;
-    font-family: 'Montserrat', sans-serif;
+.section-white{
+    color: #203051;
+    background: #DCDCDC;
+    text-align: center;
+}
+
+.section-blue{
+    background: #203051;
+    text-align: center;
+}
+
+#main-title{
     font-size: 4vw;
     margin: 0px;
     text-align: center;
 }
 
-#Subtitle{
-    color: #E0E0E2;
-    font-family: 'Montserrat', sans-serif;
+#subtitle{
     font-size: 2vw;
     margin: 0px;
     text-align: center;
+    text-decoration: none;
 }
 
-@media screen and (max-width: 300px) {
-    #Title{
-        font-size: 8vw;
+#resume{
+    float:left; 
+    text-decoration: none;
+    padding: 5vh 0 0 20vw;
+}
+
+#github{
+    float: right;
+    text-decoration: none;
+    padding: 5vh 20vw 0 0;
+}
+
+.title{
+    font-size: 2vw;
+    margin: 10px 0px;
+    text-decoration: underline;
+}
+
+.text{
+    font-size: 1.5vw;
+    padding: 0vh 15vw;
+}
+
+ a, a:visited, a:active{
+    font-size: 1.5vw;
+    color:inherit;
+ }
+
+@media screen and (max-width: 1000px) {
+    #main-title{
+        font-size: 6vw;
     }
 
-    #Subtitle{
-        font-size: 6vw;
+    #subtitle, .title{
+        font-size: 4vw;
+    }
+
+    .text{
+        font-size: 3vw;    
+        padding: 0vh 5vw;
+    }
+
+    a, a:visited, a:active{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main-title{
+        font-size: 7vw;
+    }
+
+    #subtitle, .title{
+        font-size: 5vw;
+    }
+
+    .text, a, a:visited, a:active{
+        font-size: 4vw;
+        padding: 0;
     }
 }
